@@ -1,0 +1,145 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <title>Dado Tea Lunch Special</title>
+    <link rel="stylesheet" type="text/css" href="lunch_special.css">
+  </head>
+<body>
+
+  <h1>Dado Tea Lunch Special</h1>
+  
+  <div class="top">
+  Moday - Friday
+  <br/>
+  11am - 3pm
+  <br/>
+  $9.95 plus tax
+  <br/>
+  <br/>
+  Includes sandwich, snack, and drink.
+  <br/>
+  <br/>
+  </div>
+  
+  <form method="post" action="http://morpheus.dce.harvard.edu/cgi-bin/echo.cgi" enctype="application/x-www-form-urlencoded">
+    <fieldset>
+    <legend>Order Information</legend>
+    </br>
+      <div>
+        <strong><label for="name">Name:</label></strong>
+        <br/>
+        <input type="text" name="name" placeholder="" id="name"/>
+        <br/>
+        </br>
+        <input type="radio" name="where" value="Here" id="here"/>
+        <label for="here">Here</label>
+        <br/>
+        <input type="radio" name="where" value="To Go" id="togo" />
+        <label for="togo">To Go</label>
+      </div>
+      </br>
+    </fieldset>
+    <fieldset>
+    <legend>Sandwiches</legend>
+    </br>
+      <div>
+        <strong>Monday</strong>
+        <br/>
+        <input type="radio" name="sandwich" value="Monday,Tomato Mozarilla" id="pts" />
+        <label for="pts">Tomato Mozarilla</label>
+        <br/>
+        <input type="radio" name="sandwich" value="Monday,Chicken Salad" id="chick"/>
+        <label for="chick">Chicken Salad</label>
+        <br/>
+        </br>
+        
+        <strong>Tuesday</strong>
+        <br/>
+        <input type="radio" name="sandwich" value="Tuesday,Greek Salad Wrap" id="greek"/>
+        <label for="greek">Greek Salad Wrap</label>
+        <br/>
+        <input type="radio" name="sandwich" value="Tuesday,Toto Wrap" id="toto"/>
+        <label for="toto">Toto Wrap</label>
+        <br/>
+        </br>
+        <strong>Wednesday</strong>
+        
+        <br/>
+        <input type="radio" name="sandwich" value="Wednesday,Red Pepper Hummus" id="hum" />
+        <label for="hum">Red Pepper Hummus</label>
+        <br/>
+        <input type="radio" name="sandwich" value="Wednesday,Roasted Turkey" id="turkey" />
+        <label for="turkey">Roasted Turkey</label>
+        <br/>
+        </br>
+        <strong>Thursday</strong>
+        <br/>
+        <input type="radio" name="sandwich" value="Thursday,Carrot-Ginger Hummus Wrap"id="cgw" />
+        <label for="cgw">Carrot-Ginger Hummus Wrap</label>
+        <br/>
+        <input type="radio" name="sandwich" value="Thursday,Egg Salad" id="egg" />
+        <label for="egg">Egg Salad</label>
+        <br/>
+        </br>
+        <strong>Friday</strong>
+        <br/>
+        <input type="radio" name="sandwich" value="Friday,Dado Wrap" id="dado"/>
+        <label for="dado">Dado Wrap</label>
+        <br/>
+        <input type="radio" name="sandwich" value="Friday,Tuna Salad" id="tuna"/>
+        <label for="tuna">Tuna Salad</label>
+      </div>
+      </br>
+    </fieldset>
+    <fieldset>
+    <legend>Snacks</legend>
+    </br>
+      <strong>Snacks</strong>
+        <br/>
+        <input type="radio" name="snacks" value="Apple" id="apple" />
+        <label for="apple">Apple</label>
+        <br/>
+        <input type="radio" name="snacks" value="Banana" id="banana"/>
+        <label for="banana">Banana</label>
+        <br/>
+        <input type="radio" name="snacks" value="Potato Chip" id="chip"/>
+        <label for="chip">Potato Chip</label>
+        <br/>
+        </br>
+    </fieldset>
+    <fieldset>
+    <legend>Drinks</legend>
+    </br>
+      <div>
+        <strong>Drinks</strong>
+        <br/>
+        <select name="drink">
+          <optgroup label="Black Tea">
+            <option>Hot Black Tea - Keemum</option>
+            <option>Hot Black Tea - Decaf Keemum</option>
+            <option>Iced Black Tea - Keemum</option>
+          </optgroup>
+          <optgroup label="Green Tea">
+           <option>Hot Green Tea - Sencha</option>
+            <option>Hot Greed Tea - Decaf Sencha</option>
+            <option>Iced Green Tea - Sencha</option>
+          </optgroup>"
+          <optgroup label="Coffee">
+            <option>Hot Coffee</option>
+            <option>Hot Decaf Coffee</option>
+            <option>Iced Coffee</option>
+          </optgroup>"
+        </select>
+        </br>
+        <br/>
+        <input type="checkbox" name="drink size"value="Large Drink" id="large"/>
+        <label for="large">Large drink (add 50&cent)</label>
+      </div>
+    </fieldset>
+    </br>
+    <input type="submit" name="action" value="Place Order" class="submit"/>
+  </form>
+  </br>
+</body>
+</html>
